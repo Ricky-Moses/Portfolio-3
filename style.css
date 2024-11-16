@@ -30,7 +30,7 @@
 }
 
 #navbar{
-    /* position: sticky; */
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -117,8 +117,7 @@
 /* Skills========================================================= */
 
 #skill{
-    border: solid red;
-    height: 100vh;
+    height: 80vh;
     position: relative;
 }
 
@@ -138,10 +137,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 5px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     width: 100%;
 }
 
@@ -224,31 +224,31 @@
 
 }
 
-@media (max-width:1204px){
+@media (max-width:1215px){
     /* Skill--------------------------------------------------- */
 
     #skill{
-        height: 220vh;
+        height: 180vh;
     }
 
     #skill .skill-container{
 
-        transform: translate(-50%,-123%);
+        transform: translate(-50%,-70%);
     }
 
     /* Skill--------------------------------------------------- */
 }
 
 
-@media (max-width:804px){
+@media (max-width:810px){
     /* Skill--------------------------------------------------- */
 
     #skill{
-        height: 190vh;
+        height: 200vh;
     }
 
     #skill .skill-container{
-        top: 116%;
+        transform: translate(-50%,-60%);
     }
 
     /* Skill--------------------------------------------------- */
@@ -282,6 +282,13 @@
         height: fit-content;
     }
     /* Navigation----------------------------------------------- */
+    /* skill----------------------------------------------- */
+
+    #skill .skill-title{
+        transform: translateY(10%);
+    }
+
+    /* skill----------------------------------------------- */
 }
 
 
@@ -304,7 +311,11 @@
     /* Skill--------------------------------------------------- */
 
     #skill .skill-title{
-        transform: translateY(40%);
+        transform: translateY(30%);
+    }
+
+    #skill .skill-container{
+        transform: translate(-50%, -55%);
     }
 
     /* Skill--------------------------------------------------- */
@@ -326,7 +337,7 @@
 
     #skill .skill-container{
 
-        transform: translate(-50%,-143%);
+        transform: translate(-50%,-55%);
     }
     
     /* Skill--------------------------------------------------- */
