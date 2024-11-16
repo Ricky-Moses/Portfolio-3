@@ -37,7 +37,7 @@
 
 #navbar .header{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding: 10px 100px;
     position: relative;
@@ -224,7 +224,7 @@
 
 }
 
-@media (max-width:1215px){
+@media (max-width:1210px){
     /* Skill--------------------------------------------------- */
 
     #skill{
@@ -315,7 +315,7 @@
     }
 
     #skill .skill-container{
-        transform: translate(-50%, -55%);
+        transform: translate(-50%, -65%);
     }
 
     /* Skill--------------------------------------------------- */
