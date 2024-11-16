@@ -13,9 +13,9 @@
     --text-color-B: #000;
 }
 
-/* body{
+body{
     height: 1000vh;
-} */
+}
 
 /* Navigation=================================================== */
 
@@ -67,6 +67,7 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 /* Main========================================================= */
@@ -119,4 +120,15 @@
         height: fit-content;
     }
     /* Navigation----------------------------------------------- */
+}
+
+
+@media (max-width:437px){
+    /* Main--------------------------------------------------- */
+
+    #main{
+        background-position: center left;
+    }
+
+    /* Main--------------------------------------------------- */
 }
