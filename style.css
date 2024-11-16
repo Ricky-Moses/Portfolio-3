@@ -11,6 +11,8 @@
 :root{
     --text-color-W: #fff;
     --text-color-B: #000;
+    --border-radius-1: 10px;
+    --bg-color: #2f80ff;
 }
 
 body{
@@ -30,6 +32,7 @@ body{
 #navbar{
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 #navbar .header{
@@ -38,7 +41,8 @@ body{
     justify-content: space-between;
     padding: 10px 100px;
     position: relative;
-    background: rgb(33,37,41);
+    background: var(--bg-color);
+
 }
 
 #navbar .logo{
@@ -73,6 +77,36 @@ body{
 
 #main .main-intro{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    text-align: center;
+    line-height: 70px;
+    color: var(--text-color-W);
+}
+
+.main-intro h3{
+    font-size: 2em;
+}
+
+.main-intro h1{
+    font-size: 3em;
+}
+
+.main-intro .btn-1{
+    padding: 10px 20px;
+    border-radius: var(--border-radius-1);
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    background: var(--bg-color);
+    color: var(--text-color-W);
+    font-weight: 800;
+}
+
+.main-intro .btn-1:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 /* Main========================================================= */
@@ -95,6 +129,14 @@ body{
     }
     /* Navigation----------------------------------------------- */
 
+    /* Main----------------------------------------------------- */
+
+    #main .main-intro{
+        width: 100%;
+    }
+
+    /* Main----------------------------------------------------- */
+
 }
 
 
@@ -112,7 +154,7 @@ body{
         width: 100%;
         height: 0;
         overflow: hidden;
-        background: rgb(33,37,41);
+        background: var(--bg-color);
     }
 
     #navbar nav ul{
@@ -136,4 +178,16 @@ body{
     }
 
     /* Main--------------------------------------------------- */
+}
+
+
+@media (max-width:385px){
+    /* Main------------------------------------------------------ */
+
+    #main .main-intro{
+        width: 60%;
+        top: 60%;
+    }
+
+    /* Main------------------------------------------------------ */
 }
