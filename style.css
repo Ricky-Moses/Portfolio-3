@@ -68,6 +68,11 @@ body{
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    position: relative;
+}
+
+#main .main-intro{
+    position: absolute;
 }
 
 /* Main========================================================= */
@@ -123,7 +128,7 @@ body{
 }
 
 
-@media (max-width:437px){
+@media (max-width:500px){
     /* Main--------------------------------------------------- */
 
     #main{
