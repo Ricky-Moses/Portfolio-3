@@ -284,8 +284,17 @@
     /* Navigation----------------------------------------------- */
     /* skill----------------------------------------------- */
 
+    #skill{
+        border: solid red;
+        height: 120vh;
+    }
+
     #skill .skill-title{
         transform: translateY(10%);
+    }
+
+    #skill .skill-container{
+    transform: translate(-50%, -68%);
     }
 
     /* skill----------------------------------------------- */
@@ -309,6 +318,11 @@
     /* Main--------------------------------------------------- */
 
     /* Skill--------------------------------------------------- */
+
+    #skill{
+        border: solid red;
+        height: 150vh;
+    }
 
     #skill .skill-title{
         transform: translateY(30%);
