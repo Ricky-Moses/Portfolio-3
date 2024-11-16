@@ -15,9 +15,9 @@
     --bg-color: #2f80ff;
 }
 
-body{
+/* body{
     height: 1000vh;
-}
+} */
 
 /* Navigation=================================================== */
 
@@ -30,7 +30,7 @@ body{
 }
 
 #navbar{
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 100;
 }
@@ -87,6 +87,8 @@ body{
 
 .main-intro h3{
     font-size: 2em;
+    font-weight: 500;
+    font-variant: small-caps;
 }
 
 .main-intro h1{
@@ -111,6 +113,80 @@ body{
 
 /* Main========================================================= */
 
+
+/* Skills========================================================= */
+
+#skill{
+    border: solid red;
+    height: 100vh;
+    position: relative;
+}
+
+#skill .skill-title{
+    transform: translateY(60%);
+    text-align:center;
+    line-height: 50px;
+}
+
+.skill-title h3{
+    color: #5b5b5b;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+#skill .skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.skill-container .items{
+    border: 1px solid #333;
+    border-radius: var(--border-radius-1);
+    width: 400px;
+    height: 350px;
+    position: relative;
+}
+
+.items .item-icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    background: var(--bg-color);
+    margin: 15px auto;
+}
+
+.item-icon i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: var(--text-color-W);
+}
+
+.items .item-content{
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -20%);
+    line-height: 35px;
+}
+
+.item-content h4{
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Skills========================================================= */
 
 
 
@@ -137,6 +213,45 @@ body{
 
     /* Main----------------------------------------------------- */
 
+    /* Skill----------------------------------------------------- */
+
+    #skill .skill-container{
+        top: 70%;
+    }
+
+    /* Skill----------------------------------------------------- */
+
+
+}
+
+@media (max-width:1204px){
+    /* Skill--------------------------------------------------- */
+
+    #skill{
+        height: 220vh;
+    }
+
+    #skill .skill-container{
+
+        transform: translate(-50%,-123%);
+    }
+
+    /* Skill--------------------------------------------------- */
+}
+
+
+@media (max-width:804px){
+    /* Skill--------------------------------------------------- */
+
+    #skill{
+        height: 190vh;
+    }
+
+    #skill .skill-container{
+        top: 116%;
+    }
+
+    /* Skill--------------------------------------------------- */
 }
 
 
@@ -171,13 +286,29 @@ body{
 
 
 @media (max-width:500px){
-    /* Main--------------------------------------------------- */
 
+    /* Navigation----------------------------------------------- */
+
+    #navbar .header{
+        padding: 20px;
+    }
+
+    /* Navigation----------------------------------------------- */
+
+    /* Main--------------------------------------------------- */
     #main{
         background-position: center left;
     }
-
     /* Main--------------------------------------------------- */
+
+    /* Skill--------------------------------------------------- */
+
+    #skill .skill-title{
+        transform: translateY(40%);
+    }
+
+    /* Skill--------------------------------------------------- */
+    
 }
 
 
@@ -190,4 +321,13 @@ body{
     }
 
     /* Main------------------------------------------------------ */
+
+    /* Skill--------------------------------------------------- */
+
+    #skill .skill-container{
+
+        transform: translate(-50%,-143%);
+    }
+    
+    /* Skill--------------------------------------------------- */
 }
