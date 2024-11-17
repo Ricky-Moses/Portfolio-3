@@ -280,7 +280,7 @@
 
 #curriculum-vitae{
     width: 100%;
-    border: solid red;
+    border: solid transparent;
 }
 
 #curriculum-vitae .curriculum-title{
@@ -308,15 +308,111 @@
 }
 
 .bio-data .profile-left{
-    border: solid;
-    height: 90vh;
+    height: 105vh;
+    position: relative;
 }
+
+.profile-left .profile-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-radius: 50%;
+}
+
+.profile-left .profile-bio-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(80%);
+}
+
+.profile-bio-data h1{
+    margin: 0 0 20px;
+}
+
+.profile-bio-data .profile-link{
+    text-align: center;
+}
+
+.profile-link .profile-icon{
+    margin: 0 0 5px;
+}
+
+.profile-left .profile-social-media{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.profile-social-media .social-link{
+    width: 50px;
+    height: 50px;
+    background: #2f80ff;
+    color: var(--text-color-W);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-social-media .social-link:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+.social-link i{
+    font-size: 1.3em;
+}
+
+.profile-left .skill-interest{
+    text-align: center;
+}
+
+.skill-interest h2{
+    margin: 0 0 10px;
+}
+
 
 .bio-data .profile-right{
-    border: solid;
-    height: 90vh;
+    height: fit-content;
+    position: relative;
 }
 
+.profile-right h1{
+    font-size: 2em;
+    padding: 20px 0;
+    border-bottom: 1px solid #33333350;
+}
+
+.profile-right h5{
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+.profile-right h6{
+    font-size: 1.5em;
+    margin: 10px 0 0;
+}
+
+.profile-right p{
+    margin: 20px 0;
+}
+
+.profile-right ul{
+    margin: 20px;
+}
+
+.profile-right ul li{
+    list-style-type:circle;
+}
+
+.profile-right .personal-bio{
+    display: none;
+}
 
 
 /* Curriculum Vitae========================================================== */
@@ -370,6 +466,9 @@
     /* #curriculum-vitae .profile-img{
         width: 200px;
     } */
+    .profile-left .profile-img{
+        transform: translate(-50%, -100%);
+    }
     
     /* Curriculum Vitae--------------------------------------------------- */
 
@@ -391,6 +490,7 @@
     /* #curriculum-vitae .profile-img{
         width: 200px;
     } */
+
 
     /* Curriculum Vitae--------------------------------------------------- */
 }
@@ -440,6 +540,15 @@
     }
     
      /* About----------------------------------------------------- */
+
+    /* Curriculum Vitae--------------------------------------------------- */
+
+    .profile-left .profile-img{
+        transform: translate(-50%, -100%);
+    }
+
+    /* Curriculum Vitae--------------------------------------------------- */
+
 }
 
 
@@ -471,10 +580,110 @@
     }
     /* Navigation----------------------------------------------- */
 
+    /* About----------------------------------------------------- */
+
+    #about .about-list{
+        align-items: start;
+    }
+    
+    #about .about-list .list-content-1{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 8%;
+    }
+        
+    #about .about-list .list-content-2{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 33%;
+    }
+        
+    #about .about-list .list-content-3{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 59%;
+    }
+        
+    #about .about-list .list-content-4{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 84%;
+    }
+        
+     /* About----------------------------------------------------- */
+
     /* Curriculum Vitae--------------------------------------------------- */
 
     #curriculum-vitae .bio-data{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 90%;
+        height: auto;
+    }
+
+    .profile-left{
+        display: none;
+    }
+
+    .profile-right{
+        width: 100%;
+    }
+
+    .profile-right .personal-bio{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .personal-bio .personal-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-52%, 35%);
+        width: 200px;
+        height: 200px;
+        border: solid;
+        border-radius: 50%;
+    }
+
+    .personal-bio .personal-bio-data{
+        margin-top: 180px;
+        text-align: center;
+    }
+
+    .profile-right .personal-bio h1{
+        border: none;
+    }
+
+    .personal-bio-data .personal-social-media{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+        gap: 20px;
+    }
+
+    .personal-social-media .social-link{
+        width: 50px;
+        height: 50px;
+        background: #2f80ff;
+        color: var(--text-color-W);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personal-social-media .social-link:hover{
+        transform: scale(1.1);
+        box-shadow:0 0 10px rgba(0,0,0,.5);
+    }
+
+    .personal-bio .skill-interest li{
+        list-style-type: none;
     }
 
     /* Curriculum Vitae--------------------------------------------------- */
@@ -556,5 +765,15 @@
     }
     
      /* About----------------------------------------------------- */
+
+    /* Curriculum Vitae--------------------------------------------------- */
+
+    .profile-right .personal-bio .personal-img{
+    transform: translate(-50%, 60%);
+    }
+
+
+    /* Curriculum Vitae--------------------------------------------------- */
+
 
 }
