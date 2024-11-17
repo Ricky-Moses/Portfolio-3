@@ -47,6 +47,7 @@
 
 #navbar .logo{
     font-size: 1.5em;
+    font-weight: 600;
     font-variant: small-caps;
     letter-spacing: 2px;
     color: var(--text-color-W);
@@ -218,11 +219,27 @@
 
 .about-list .lists{
     padding: 5%;
-    background: url(image/canada.jpg) no-repeat center;
-    background-size: cover;
-    border: solid;
     border-radius: 50%;
+}
 
+.about-list .list-img-1{
+    background: url(image/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-list .list-img-2{
+    background: url(image/crew-4Hg8LH9Hoxc-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-list .list-img-3{
+    background: url(image/christin-hume-mfB1B1s4sMc-unsplash.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-list .list-img-4{
+    background: url(image/domenico-loia-hGV2TfOh0ns-unsplash.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .about-list .list-content-1{
@@ -259,6 +276,50 @@
 /* About========================================================== */
 
 
+/* Curriculum Vitae========================================================== */
+
+#curriculum-vitae{
+    width: 100%;
+    border: solid red;
+}
+
+#curriculum-vitae .curriculum-title{
+    text-align: center;
+    margin: 30px;
+    line-height: 50px;
+}
+
+.curriculum-title h1{
+    font-size: 3em;
+    font-variant: small-caps;
+}
+
+.curriculum-title p{
+    font-size: 1.2em;
+    font-style: italic;
+    color: #5a5959;
+}
+
+#curriculum-vitae .bio-data{
+    display: grid;
+    grid-template-columns: 30% 45%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bio-data .profile-left{
+    border: solid;
+    height: 90vh;
+}
+
+.bio-data .profile-right{
+    border: solid;
+    height: 90vh;
+}
+
+
+
+/* Curriculum Vitae========================================================== */
 
 
 
@@ -266,7 +327,9 @@
 
 
 
-/* Media Query */
+
+
+/* ||||||||| Media Query ||||||||| */
 
 @media (max-width: 1400px){
     /* Navigation----------------------------------------------- */
@@ -302,6 +365,14 @@
 
     /* About----------------------------------------------------- */
 
+    /* Curriculum Vitae--------------------------------------------------- */
+
+    /* #curriculum-vitae .profile-img{
+        width: 200px;
+    } */
+    
+    /* Curriculum Vitae--------------------------------------------------- */
+
 
 
 }
@@ -314,6 +385,14 @@
     }
 
     /* Skill--------------------------------------------------- */
+
+    /* Curriculum Vitae--------------------------------------------------- */
+
+    /* #curriculum-vitae .profile-img{
+        width: 200px;
+    } */
+
+    /* Curriculum Vitae--------------------------------------------------- */
 }
 
 
@@ -391,6 +470,14 @@
         height: fit-content;
     }
     /* Navigation----------------------------------------------- */
+
+    /* Curriculum Vitae--------------------------------------------------- */
+
+    #curriculum-vitae .bio-data{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Curriculum Vitae--------------------------------------------------- */
 }
 
 
