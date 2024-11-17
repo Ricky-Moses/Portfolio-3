@@ -485,6 +485,13 @@ form .btn{
     border-radius: var(--border-radius-1);
 }
 
+form .btn:hover{
+    background: #fff;
+    color: var(--text-color-B);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
 
 /* contact========================================================== */
 /* footer========================================================== */
@@ -895,7 +902,7 @@ footer{
     }
 
     form .btn{
-        transform: translate(-50%, 420%);
+        transform: translate(-50%, 480%);
     }
 
      /* Contact----------------------------------------------------- */
