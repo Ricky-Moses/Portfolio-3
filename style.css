@@ -126,6 +126,11 @@
     transform: translateY(30%);
 }
 
+.skill-title h1{
+    font-size: 3em;
+    font-variant: small-caps;
+}
+
 .skill-title h3{
     font-style: italic;
     color: #5a5959;
@@ -177,6 +182,84 @@
 
 
 
+/* About========================================================== */
+
+#about{
+    border: solid transparent;
+}
+
+#about .about-title{
+    text-align: center;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+.about-title h1{
+    font-size: 3em;
+    font-variant: small-caps;
+}
+
+.about-title h5{
+    font-size: 1.2em;
+    font-style: italic;
+    color: #5a5959;
+}
+
+
+#about .about-list{
+    height: 135vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+}
+
+.about-list .lists{
+    padding: 5%;
+    background: url(image/canada.jpg) no-repeat center;
+    background-size: cover;
+    border: solid;
+    border-radius: 50%;
+
+}
+
+.about-list .list-content-1{
+    width: 40%;
+    text-align: end;
+    top: 6%;
+    left: 4%;
+    position: absolute;
+}
+
+.about-list .list-content-2{
+    width: 40%;
+    text-align: start;
+    top: 31%;
+    left: 56%;
+    position: absolute;
+}
+.about-list .list-content-3{
+    width: 40%;
+    text-align: end;
+    top: 56%;
+    left: 4%;
+    position: absolute;
+}
+
+.about-list .list-content-4{
+    width: 40%;
+    text-align: start;
+    top: 81%;
+    left: 56%;
+    position: absolute;
+}
+
+/* About========================================================== */
+
+
+
 
 
 
@@ -199,11 +282,26 @@
     }
 
     /* Main----------------------------------------------------- */
+    /* About----------------------------------------------------- */
 
-    /* Skill----------------------------------------------------- */
+    #about .about-list .list-content-1{
+        top: 5%;
+    }
 
+    #about .about-list .list-content-2{
+        top: 29%;
+    }
 
-    /* Skill----------------------------------------------------- */
+    #about .about-list .list-content-3{
+        top: 55%;
+    }
+
+    #about .about-list .list-content-4{
+        top: 80%;
+    }
+
+    /* About----------------------------------------------------- */
+
 
 
 }
@@ -227,6 +325,42 @@
     }
 
     /* Skill--------------------------------------------------- */
+
+    /* About----------------------------------------------------- */
+
+    #about .about-list{
+        align-items: start;
+    }
+
+    #about .about-list .list-content-1{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 5%;
+    }
+    
+    #about .about-list .list-content-2{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 29%;
+    }
+    
+    #about .about-list .list-content-3{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 55%;
+    }
+    
+    #about .about-list .list-content-4{
+        text-align: start;
+        width: 80%;
+        left: 13%;
+        top: 80%;
+    }
+    
+     /* About----------------------------------------------------- */
 }
 
 
@@ -257,11 +391,6 @@
         height: fit-content;
     }
     /* Navigation----------------------------------------------- */
-    /* skill----------------------------------------------- */
-
-
-
-    /* skill----------------------------------------------- */
 }
 
 
@@ -281,11 +410,43 @@
     }
     /* Main--------------------------------------------------- */
 
-    /* Skill--------------------------------------------------- */
+    /* About----------------------------------------------------- */
 
+    #about .about-list{
+        align-items: start;
+        margin-top: -10%;
+    }
 
+    #about .about-list .list-content-1{
+        text-align: start;
+        width: 85%;
+        left: 15%;
+        top: 8%;
+    }
+    
+    #about .about-list .list-content-2{
+        text-align: start;
+        width: 85%;
+        left: 15%;
+        top: 32%;
+    }
+    
+    #about .about-list .list-content-3{
+        text-align: start;
+        width: 85%;
+        left: 15%;
+        top: 57%;
+    }
+    
+    #about .about-list .list-content-4{
+        text-align: start;
+        width: 85%;
+        left: 15%;
+        top: 82%;
+    }
+    
+     /* About----------------------------------------------------- */
 
-    /* Skill--------------------------------------------------- */
     
 }
 
@@ -300,9 +461,13 @@
 
     /* Main------------------------------------------------------ */
 
-    /* Skill--------------------------------------------------- */
+    /* About----------------------------------------------------- */
 
-
+    #about .about-list{
+        align-items: start;
+        padding: 0 10px;
+    }
     
-    /* Skill--------------------------------------------------- */
+     /* About----------------------------------------------------- */
+
 }
