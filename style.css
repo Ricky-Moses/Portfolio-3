@@ -321,6 +321,9 @@
     height: 200px;
     border: solid;
     border-radius: 50%;
+    background: url(image/Ricky.jpg) no-repeat;
+    background-position: 50%;
+    background-size: cover;
 }
 
 .profile-left .profile-bio-data{
@@ -351,7 +354,7 @@
 .profile-social-media .social-link{
     width: 50px;
     height: 50px;
-    background: #2f80ff;
+    background: var(--bg-color);
     color: var(--text-color-W);
     border-radius: 50%;
     display: flex;
@@ -416,6 +419,107 @@
 
 
 /* Curriculum Vitae========================================================== */
+
+
+/* contact========================================================== */
+
+#contact{
+    background: url(image/last\ key\ board.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 10px 0 0;
+    position: relative;
+}
+
+#contact .contact-information{
+    color: var(--text-color-W);
+    text-align: center;
+    margin: 50px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form .input-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    height: 30vh;
+}
+
+.input-information input{
+    width: 100%;
+    height: 50%;
+    border-radius: var(--border-radius-1);
+    font-size: 1.1em;
+    padding: 0 20px;
+}
+
+form textarea{
+    width: 40%;
+    height: 30vh;
+    border-radius: var(--border-radius-1);
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+    padding:20px;
+}
+
+form .btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 250%);
+    padding: 10px 20px;
+    border: solid var(--text-color-W);
+    background: transparent;
+    font-size: 1.2em;
+    color: var(--text-color-W);
+    border-radius: var(--border-radius-1);
+}
+
+
+/* contact========================================================== */
+/* footer========================================================== */
+
+footer{
+    border: solid #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.foot-link{
+    display: flex;
+    gap: 40px;
+}
+
+.foot-link .social-link{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-W);
+}
+
+.foot-link .social-link:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+/* footer========================================================== */
 
 
 
@@ -548,6 +652,14 @@
     }
 
     /* Curriculum Vitae--------------------------------------------------- */
+    /* Contact--------------------------------------------------- */
+
+    form .btn{
+    transform: translate(-50%, 270%);
+
+    }
+
+    /* Contact--------------------------------------------------- */
 
 }
 
@@ -648,6 +760,9 @@
         height: 200px;
         border: solid;
         border-radius: 50%;
+        background: url(image/Ricky.jpg) no-repeat;
+        background-position: 50%;
+        background-size: cover;
     }
 
     .personal-bio .personal-bio-data{
@@ -687,6 +802,37 @@
     }
 
     /* Curriculum Vitae--------------------------------------------------- */
+
+
+    /* Contact--------------------------------------------------- */
+
+    #contact{
+        height: 100vh;
+        padding: 5px 0 0;
+    }
+
+    #contact form{
+        justify-content: start;
+        flex-direction: column;
+        transform: translateY(5%);
+        height: 70vh;
+    }
+
+    .input-information input{
+        width: 150%;
+    }
+
+    form textarea{
+        width: 60%;
+    
+        height: 20vh;
+    }
+
+    form .btn{
+    transform: translate(-50%, 400%);
+    }
+
+    /* Contact--------------------------------------------------- */
 }
 
 
@@ -742,6 +888,24 @@
     }
     
      /* About----------------------------------------------------- */
+     /* Contact----------------------------------------------------- */
+
+    #contact form{
+        height: 65vh;
+    }
+
+    form .btn{
+        transform: translate(-50%, 380%);
+    }
+
+     /* Contact----------------------------------------------------- */
+     /* Footer----------------------------------------------------- */
+
+    footer{
+        padding: 20px;
+    }
+
+     /* Footer----------------------------------------------------- */
 
     
 }
