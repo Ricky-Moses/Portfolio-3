@@ -319,10 +319,9 @@
     transform: translate(-50%, -150%);
     width: 200px;
     height: 200px;
-    border: solid;
     border-radius: 50%;
-    background: url(image/Ricky.jpg) no-repeat;
-    background-position: 50%;
+    background: url(./image/Ricky_Moses.JPG) no-repeat;
+    background-position: top center;
     background-size: cover;
 }
 
